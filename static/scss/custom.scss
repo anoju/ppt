@@ -64,6 +64,9 @@ html {
 .fc-yellow {
   color: #ff0;
 }
+.fc-gray {
+  color: #999;
+}
 .t-center {
   text-align: center !important;
 }
@@ -299,6 +302,12 @@ html {
     margin: 0;
   }
 }
+.sub-txt2 {
+  font-size: 1.4rem;
+  p {
+    margin: 0;
+  }
+}
 .img-link {
   position: relative;
   display: inline-block;
@@ -434,6 +443,10 @@ ol.list-txt {
     }
   }
 }
+ol.ol-list {
+  display: block;
+  margin: 0;
+}
 .list-txt {
   font-size: 1.6rem;
   > li {
@@ -496,6 +509,32 @@ ol.list-txt {
   height: 100%;
   z-index: 10;
   pointer-events: none;
+}
+table.table {
+  width: 100%;
+  font-size: 1.3rem;
+  border-top: 1px solid $baseTxtColor;
+  border-bottom: 1px solid #ddd;
+  small {
+    vertical-align: inherit;
+  }
+  th,
+  td {
+    padding: 0.5rem 1rem;
+    border: 0 none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    + th,
+    + td {
+      border-left: 1px solid #ddd;
+    }
+  }
+  thead {
+    th,
+    td {
+      background: #f1f1f1;
+    }
+  }
 }
 /* content */
 .sample-1 {
